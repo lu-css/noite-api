@@ -16,4 +16,6 @@ public class UserModel
     public string? Salt { get; set; }
 
     public bool EmailConfirmed { get; set; } = false;
+
+    public List<FlowModel> flows = default!;
 }

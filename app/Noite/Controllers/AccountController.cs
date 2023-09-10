@@ -3,7 +3,6 @@ using Noite.Repositories;
 using Noite.Models;
 using Noite.DTO;
 using User = Noite.Usecases.User;
-using Microsoft.AspNetCore.Authorization;
 using Noite.Providers.TokenProvider;
 
 namespace Noite.Controllers;
@@ -19,6 +18,15 @@ public class AccountController : ControllerBase
     {
         _userRepository = userRepository;
         _tokenProvider = new Jwt();
+    }
+    [HttpGet]
+    public async Task<List<UserDTO>> Get()
+    {
+        var users = await _userRepository.GetAsync();
+
+        return users
+          .Select(user => new UserDTO(user.Id, user.Username, user.Email, user.Password))
+          .ToList();
     }
 
     [HttpGet("{id:length(24)}")]

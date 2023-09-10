@@ -16,6 +16,7 @@ var builder = WebApplication.CreateBuilder(args);
 var databasesection = builder.Configuration.GetSection("NoiteDatabase");
 builder.Services.Configure<NoiteDatabaseSettings>(databasesection);
 builder.Services.AddSingleton<UserRepository>();
+builder.Services.AddSingleton<FlowRepository>();
 
 string jwtSecretKey = Environment.GetEnvironmentVariable("JWY_SECRET_KEY") ?? throw new InvalidOperationException("\"JWT Sercret key\" Not founded. Pleace check the env variable");
 

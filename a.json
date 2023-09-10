@@ -1,0 +1,63 @@
+{
+  "tables": [
+    {
+      "id": "8474ac93-e709-4953-9c10-9c19b77b2945",
+      "name": "dasd",
+      "color": 2,
+      "properties": [
+        {
+          "id": "1802246d-52bd-4b43-ba19-b78c5599d83a",
+          "columnName": "a",
+          "columnType": "dasd"
+        },
+        {
+          "id": "1c7fd132-7f3d-4fd3-95f8-c8ee74944a41",
+          "columnName": "b",
+          "columnType": "asdasd"
+        },
+        {
+          "id": "cb3bace5-ed68-4b5f-b0a6-24b5e6990f7c",
+          "columnName": "",
+          "columnType": ""
+        }
+      ],
+      "node": {
+        "id": "8474ac93-e709-4953-9c10-9c19b77b2945",
+        "data": {
+          "a": "a"
+        },
+        "position": {
+          "x": 105.5,
+          "y": 112.5
+        },
+        "type": "table"
+      }
+    },
+    {
+      "id": "b9af5b4c-5b47-4eb9-8783-4df67b8aeb60",
+      "name": "",
+      "color": 0,
+      "properties": [],
+      "node": {
+        "id": "b9af5b4c-5b47-4eb9-8783-4df67b8aeb60",
+        "data": {
+          "a": "a"
+        },
+        "position": {
+          "x": 138,
+          "y": 398
+        },
+        "type": "table"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "b9af5b4c-5b47-4eb9-8783-4df67b8aeb60",
+      "sourceHandle": "handle-top",
+      "target": "8474ac93-e709-4953-9c10-9c19b77b2945",
+      "targetHandle": "handle-bottom",
+      "id": "reactflow__edge-b9af5b4c-5b47-4eb9-8783-4df67b8aeb60handle-top-8474ac93-e709-4953-9c10-9c19b77b2945handle-bottom"
+    }
+  ]
+}
