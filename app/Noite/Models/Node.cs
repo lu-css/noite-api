@@ -2,10 +2,10 @@ namespace Noite.Models;
 
 public class Position
 {
-    public int X { get; set; }
-    public int Y { get; set; }
+    public double X { get; set; }
+    public double Y { get; set; }
 
-    public Position(int x, int y)
+    public Position(double x, double y)
     {
         this.X = x;
         this.Y = y;
@@ -16,6 +16,6 @@ public class Node
 {
     public string? Id { get; set; }
     public string? data { get; set; }
-    public Position Position { get; set; } = new Position(0, 0);
+    public Position Position { get; set; } = new Position(0d, 0d);
     public string? Type { get; set; }
 }
